@@ -80,6 +80,13 @@ class PageController extends Controller
         return view('pages.contact');
     }
 
+    public function articles(){
+        return view('pages.articles');
+    }
+    public function articles_show(){
+        return view('pages.article_show');
+    }
+
 
 
 }
