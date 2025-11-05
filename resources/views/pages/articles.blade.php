@@ -7,7 +7,7 @@
             </div>
             <div class="col-sm-6 text-center text-md-right">
                 <div class="d-inline-flex pt-2">
-                    <h4 class="m-0 text-white"><a class="text-white" href="{{route('index')}}">Bosh sahifa</a></h4>
+                    <h4 class="m-0 text-white"><a class="text-white" href="#">Bosh sahifa</a></h4>
                     <h4 class="m-0 text-white px-2">/</h4>
                     <h4 class="m-0 text-white">Maqolalar</h4>
                 </div>
@@ -19,12 +19,13 @@
 
     <!-- Blog List Start -->
     <div class="container bg-white pt-5">
+        @forelse($articles as $a)
         <div class="row blog-item px-3 pb-5">
             <div class="col-md-5">
-                <img class="img-fluid mb-4 mb-md-0" src="img/logo.png" alt="Image">
+                <img class="img-fluid mb-4 mb-md-0" src="{{asset('img/article.jpg')}}" alt="Image">
             </div>
             <div class="col-md-7">
-                <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">{!! $a['title'] !!}</h3>
                 <div class="d-flex mb-3">
                     <small class="mr-2 text-muted"><i class="fa fa-list-alt"></i> 3 ta ilmiy ta'rif</small>
                     <small class="mr-2 text-muted"><i class="fa fa-puzzle-piece"></i> 4 ta ilmiy tasnif</small>
@@ -33,9 +34,12 @@
                 <p>
                     <b>Maqola:</b> Kriminalogiya jurnalining 5-sonida 18-sahifasida chop etilgan
                 </p>
-                <a class="btn btn-link p-0" href="{{route('articles_show')}}">O'qish <i class="fa fa-angle-right"></i></a>
+                <a class="btn btn-link p-0" href="{{ route('web.articles.show', $a['id']) }}">O'qish <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
+        @empty
+            Ma'lumot yo‘q
+        @endforelse
 
         <div class="row px-3 pb-5">
             <nav aria-label="Page navigation">
