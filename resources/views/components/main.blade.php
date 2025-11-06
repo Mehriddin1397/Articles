@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ $title ?? 'MediHelp' }}</title>
+    <title>{{ $title ?? 'Ташаббус индекси' }}</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
@@ -37,7 +37,7 @@
                 <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <a href="" class="btn btn-lg btn-block btn-primary mt-auto">Hire Me</a>
+            <a href="https://kti.iiv.uz" class="btn btn-lg btn-block btn-primary mt-auto" target="_blank">Сайтга ўтиш</a>
         </div>
         <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
             <i class="fas fa-2x fa-angle-double-right text-primary"></i>
@@ -68,7 +68,7 @@
         <!-- Footer Start -->
         <div class="container py-4 bg-secondary text-center">
             <p class="m-0 text-white">
-                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+                &copy; <a class="text-white font-weight-bold" href="#">Ташаббус индекси</a>Барча хуқуқлар ҳимояланган<a class="text-white font-weight-bold" href="#">Меҳриддин Сойибов</a>
             </p>
         </div>
         <!-- Footer End -->
