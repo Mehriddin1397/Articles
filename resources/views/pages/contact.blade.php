@@ -5,13 +5,13 @@
     <div class="container py-5 px-2 bg-primary">
         <div class="row py-5 px-4">
             <div class="col-sm-6 text-center text-md-left">
-                <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Contact Me</h1>
+                <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Боғланиш</h1>
             </div>
             <div class="col-sm-6 text-center text-md-right">
                 <div class="d-inline-flex pt-2">
                     <h4 class="m-0 text-white"><a class="text-white" href="">Home</a></h4>
                     <h4 class="m-0 text-white px-2">/</h4>
-                    <h4 class="m-0 text-white">Contact Me</h4>
+                    <h4 class="m-0 text-white">Боғланиш</h4>
                 </div>
             </div>
         </div>
@@ -24,18 +24,18 @@
         <div class="row px-3 pb-2">
             <div class="col-sm-4 text-center mb-3">
                 <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
-                <h4 class="font-weight-bold">Address</h4>
-                <p>123 Street, New York, USA</p>
+                <h4 class="font-weight-bold">Манзил</h4>
+                <p>"Мирзо Улуғбек" тум., "Буюк ипак йўли" кўчаси, 243-уй</p>
             </div>
             <div class="col-sm-4 text-center mb-3">
                 <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
-                <h4 class="font-weight-bold">Phone</h4>
-                <p>+012 345 6789</p>
+                <h4 class="font-weight-bold">Телефон рақами:</h4>
+                <p>+998 71 231 64 15</p>
             </div>
             <div class="col-sm-4 text-center mb-3">
                 <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
-                <h4 class="font-weight-bold">Email</h4>
-                <p>info@example.com</p>
+                <h4 class="font-weight-bold">Электрон манзил</h4>
+                <p>info@uzkti.uz</p>
             </div>
         </div>
         <div class="col-md-12 pb-5">
@@ -59,7 +59,7 @@
                         <p class="help-block text-danger"></p>
                     </div>
                     <div>
-                        <button class="btn btn-primary" type="submit" id="sendMessageButton">Send Message</button>
+                        <button class="btn btn-primary" type="submit" id="sendMessageButton">Юбориш</button>
                     </div>
                 </form>
             </div>

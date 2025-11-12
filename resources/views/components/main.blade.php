@@ -26,10 +26,10 @@
 <div class="wrapper">
     <div class="sidebar">
         <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
-            <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="{{asset('img/logo.png')}}" alt="Image">
-            <h1 class="font-weight-bold">Kriminalogiya tadqiqot instituti</h1>
+            <img class="mx-auto d-block w-75 bg-white img-fluid rounded-circle mb-4 p-3" src="{{asset('img/logo.png')}}" alt="Image">
+            <h1 class="font-weight-bold">Криминалогия тадқиқот институти</h1>
             <p class="mb-4">
-                Justo stet no accusam stet invidunt sanctus magna clita vero eirmod, sit sit labore dolores lorem. Lorem at sit dolor dolores sed diam justo
+                Криминологик фаолият амалиётига жорий этилган илмий ишланмалар сони бўйича «Жамоат хавфсизлиги бўйича ташаббус индекси»нинг кўрсаткичлари
             </p>
             <div class="d-flex justify-content-center mb-5">
                 <a class="btn btn-outline-primary mr-2" href="http://youtube.com/@iiv_kti" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -68,7 +68,7 @@
         <!-- Footer Start -->
         <div class="container py-4 bg-secondary text-center">
             <p class="m-0 text-white">
-                &copy; <a class="text-white font-weight-bold" href="#">Ташаббус индекси</a>Барча хуқуқлар ҳимояланган<a class="text-white font-weight-bold" href="#">Меҳриддин Сойибов</a>
+                &copy; <a class="text-white font-weight-bold" href="#">Ташаббус индекси</a> Барча хуқуқлар ҳимояланган
             </p>
         </div>
         <!-- Footer End -->

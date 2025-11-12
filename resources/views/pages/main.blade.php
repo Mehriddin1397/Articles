@@ -1,4 +1,4 @@
-<x-main title="Bosh sahifa" >
+<x-main title="Ташаббус индекси" >
     <!-- Carousel Start -->
     <div class="container p-0">
         <div id="blog-carousel" class="carousel slide" data-ride="carousel">
