@@ -3,13 +3,13 @@
     <div class="container py-5 px-2 bg-primary">
         <div class="row py-5 px-4">
             <div class="col-sm-6 text-center text-md-left">
-                <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Maqolalar</h1>
+                <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Мақолалар</h1>
             </div>
             <div class="col-sm-6 text-center text-md-right">
                 <div class="d-inline-flex pt-2">
-                    <h4 class="m-0 text-white"><a class="text-white" href="#">Bosh sahifa</a></h4>
+                    <h4 class="m-0 text-white"><a class="text-white" href="/">Бош саҳифа</a></h4>
                     <h4 class="m-0 text-white px-2">/</h4>
-                    <h4 class="m-0 text-white">Maqolalar</h4>
+                    <h4 class="m-0 text-white">Мақолалар</h4>
                 </div>
             </div>
         </div>
@@ -19,6 +19,9 @@
 
     <!-- Blog List Start -->
     <div class="container bg-white pt-5">
+        <div class="col-sm-10 text-center text-md-left mb-3">
+            <h1 class="mb-3 mb-md-0 text-black text-uppercase font-weight-bold">{{$scientist}}</h1>
+        </div>
         @forelse($articles as $a)
         <div class="row blog-item px-3 pb-5">
             <div class="col-md-5">
@@ -27,40 +30,30 @@
             <div class="col-md-7">
                 <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">{!! $a['title'] !!}</h3>
                 <div class="d-flex mb-3">
-                    <small class="mr-2 text-muted"><i class="fa fa-list-alt"></i> 3 ta ilmiy ta'rif</small>
-                    <small class="mr-2 text-muted"><i class="fa fa-puzzle-piece"></i> 4 ta ilmiy tasnif</small>
-                    <small class="mr-2 text-muted"><i class="fa fa-lightbulb"></i> 2 ta ilmiy taklik</small>
+                    @if($a['status'] == 'pending')
+                       <p style="color: red">Текширилмаган</p>
+                    @else
+                    <small class="mr-2 text-muted"><i class="fa fa-list-alt"></i> {{$a['definitions']}}-та илмий таъриф</small>
+                    <small class="mr-2 text-muted"><i class="fa fa-puzzle-piece"></i> {{$a['classifications']}}-та илмий тасниф</small>
+                    <small class="mr-2 text-muted"><i class="fa fa-lightbulb"></i> {{$a['suggestions']}}-та илмий таклиф</small>
+
+                    @endif
                 </div>
                 <p>
-                    <b>Maqola:</b> Kriminalogiya jurnalining 5-sonida 18-sahifasida chop etilgan
+                    <b>Jami:</b>  {{$a['total_score']}} ball
+                </p><br>
+                <p>
+                    <b>Мақола:</b> {{$a['publish_place']}} чоп этилган
                 </p>
-                <a class="btn btn-link p-0" href="{{ route('web.articles.show', $a['id']) }}">O'qish <i class="fa fa-angle-right"></i></a>
+                <a class="btn btn-link p-0" href="{{ route('web.articles.show', $a['id']) }}">Кўриш <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         @empty
-            Ma'lumot yo‘q
+            Маълумот йўқ
         @endforelse
 
-        <div class="row px-3 pb-5">
-            <nav aria-label="Page navigation">
-                <ul class="pagination m-0 mx-3">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="row-cols-md-3 px-3 pb-5">
+            <a href="/" class="btn btn-lg btn-block btn-primary mt-auto" >Ортга</a>
         </div>
     </div>
     <!-- Blog List End -->

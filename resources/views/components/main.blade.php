@@ -32,10 +32,10 @@
                 Justo stet no accusam stet invidunt sanctus magna clita vero eirmod, sit sit labore dolores lorem. Lorem at sit dolor dolores sed diam justo
             </p>
             <div class="d-flex justify-content-center mb-5">
-                <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-primary mr-2" href="http://youtube.com/@iiv_kti" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-primary mr-2" href="https://www.facebook.com/profile.php?id=61571592603785" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary mr-2" href="https://t.me/iiv_kti_uz" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a class="btn btn-outline-primary mr-2" href="https://www.instagram.com/iiv_kti_uz/?__pwa=1" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <a href="https://kti.iiv.uz" class="btn btn-lg btn-block btn-primary mt-auto" target="_blank">Сайтга ўтиш</a>
         </div>

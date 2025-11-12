@@ -22,7 +22,7 @@ class ScientistWebController extends Controller
 
     public function show($id)
     {
-        $response = Http::get(config('app.api_url') ."/scientists/12/articles");
+        $response = Http::get(config('app.api_url') ."/scientists/$id/articles");
 
         if (!$response->successful()) {
             return abort(500, "API bilan bog‘lanib bo‘lmadi");
@@ -30,8 +30,6 @@ class ScientistWebController extends Controller
 
         $articles = $response->json()['articles'] ?? [];
         $scientist = $response->json()['scientist'] ?? [];
-
-
 
 
 
