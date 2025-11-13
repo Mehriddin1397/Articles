@@ -4,10 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>{{ $title ?? 'Ташаббус индекси' }}</title>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
+    <title>Жамоат хавфсизлиги бўйича ташаббус индекси</title>
+    <meta name="description" content="Kriminologiya, Жамоат хавфсизлиги бўйича ташаббус индекси, Криминологик фаолият амалиётига жорий этилган илмий ишланмалар сони.">
+    <meta name="keywords" content="kriminologiya, krim, indeks, jinoyatchilik, tahlil, KTI, IIV">
+    <link rel="canonical" href="https://uzkti.uz/">
+    <meta property="og:title" content="Kriminologiya va krim indeksi – KTI IIV">
+    <meta property="og:description" content="Kriminologiya sohasidagi yangiliklar va jinoyatchilik indeksi tahlili.">
+    <meta property="og:image" content="https://uzkti.uz/img/logo.png">
+    <meta property="og:url" content="https://https://uzkti.uz/">
+
 
     <!-- Favicon -->
     <link href="{{asset('img/favicon.ico')}}" rel="icon">
@@ -26,8 +31,8 @@
 <div class="wrapper">
     <div class="sidebar">
         <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
-            <img class="mx-auto d-block w-75 bg-white img-fluid rounded-circle mb-4 p-3" src="{{asset('img/logo.png')}}" alt="Image">
-            <h1 class="font-weight-bold">Криминалогия тадқиқот институти</h1>
+            <img class="mx-auto d-block w-75 bg-white img-fluid rounded-circle mb-4 p-3" src="{{asset('img/logo.png')}}" alt="Kriminologiya">
+            <h1 class="font-weight-bold">Криминология тадқиқот институти</h1>
             <p class="mb-4">
                 Криминологик фаолият амалиётига жорий этилган илмий ишланмалар сони бўйича «Жамоат хавфсизлиги бўйича ташаббус индекси»нинг кўрсаткичлари
             </p>

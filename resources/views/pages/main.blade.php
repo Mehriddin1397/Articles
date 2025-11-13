@@ -4,14 +4,14 @@
         <div id="blog-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{asset('img/1.5.png')}}" alt="Image">
+                    <img class="w-100" src="{{asset('img/1.5.png')}}" alt="Kriminologiya">
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{asset('img/1.6.png')}}" alt="Image">
+                    <img class="w-100" src="{{asset('img/1.6.png')}}" alt="Kriminologiya">
 
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{asset('img/1.9.png')}}" alt="Image">
+                    <img class="w-100" src="{{asset('img/1.9.png')}}" alt="Kriminologiya">
 
                 </div>
             </div>

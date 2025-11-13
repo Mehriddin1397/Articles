@@ -1,4 +1,4 @@
-<x-main title="Maqolalar" >
+<x-main title="Боғланиш" >
 
 
     <!-- Page Header Start -->
