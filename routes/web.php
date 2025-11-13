@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Response;
 
 
 //Route::get('/',[PageController::class,'index'])->name('index');
+Route::get('/contact',[PageController::class,'contact'])->name('contact');
+
 
 Route::get('/', [\App\Http\Controllers\Web\ScientistWebController::class, 'index'])->name('web.scientists.index');
 Route::get('/scientists/{id}', [\App\Http\Controllers\Web\ScientistWebController::class, 'show'])->name('web.scientists.show');
