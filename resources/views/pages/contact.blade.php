@@ -9,7 +9,7 @@
             </div>
             <div class="col-sm-6 text-center text-md-right">
                 <div class="d-inline-flex pt-2">
-                    <h4 class="m-0 text-white"><a class="text-white" href="">Home</a></h4>
+                    <h4 class="m-0 text-white"><a class="text-white" href="/">Home</a></h4>
                     <h4 class="m-0 text-white px-2">/</h4>
                     <h4 class="m-0 text-white">Боғланиш</h4>
                 </div>
