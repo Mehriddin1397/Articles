@@ -4,8 +4,10 @@ define('API_KEY', '8139754723:AAHFMe35W_mljXkNZ0RZKpLP0n41EFR9YIk');
 
 function dump($what)
 {
-
-}
+    echo '<pre>';
+    print_r($what);
+    echo '</pre>';
+};
 
 function bot($method, $params = [])
 {
