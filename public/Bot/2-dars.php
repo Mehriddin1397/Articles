@@ -22,7 +22,7 @@ function bot($method, $params = [])
 
     $res = curl_exec($curl);
     curl_close($curl);
-    if (!curl_eror($curl)) return json_decode($res, true);
+    if (!curl_error($curl)) return json_decode($res, true);
 
 }
 dump(bot("getMe",[]));
