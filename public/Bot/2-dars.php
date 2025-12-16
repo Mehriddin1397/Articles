@@ -25,8 +25,14 @@ function bot($method, $params = [])
     if (!curl_error($curl)) return json_decode($res, true);
 
 }
-dump(bot("getMe",[]));
+//dump(bot("getMe",[]));
 
-;
+$hi_text = "Salom, bot ishlamoqda!";
+
+dump(bot('sendMessage', [
+    'chat_id' => "1260351935",
+    'text' => $hi_text,
+    'parse_mode' => "HTML"
+]));
 
 
