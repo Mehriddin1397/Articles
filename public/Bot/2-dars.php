@@ -50,8 +50,8 @@ Ko'rsatmalar yoki codelar uchun maxsus formatlash turidagi matn .... Loren minsi
 ```
 ";
 
-echo bot('sendMessage', [
+dump(bot('sendMessage', [
     'chat_id' => "1260351935",
     'text' => $mess_text,
     'parse_mode' => "MarkdownV2",
-]);
+]));
