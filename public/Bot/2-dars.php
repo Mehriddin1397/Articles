@@ -27,12 +27,31 @@ function bot($method, $params = [])
 }
 //dump(bot("getMe",[]));
 
-$hi_text = "Salom, bot ishlamoqda!";
+//$hi_text = "Salom, bot ishlamoqda!";
+//
+//dump(bot('sendMessage', [
+//    'chat_id' => "1260351935",
+//    'text' => $hi_text,
+//    'parse_mode' => "HTML"
+//]));
 
-dump(bot('sendMessage', [
+//3-dars matnlari -----------------------------------------------------------------------------------------------------
+
+$mess_text = "
+To'yintirilgan matn bold*\n
+_Yotiq yozuv italic_\n
+__Ostki chiziqli matn underline__\n
+~Inkor qilingan matn strikethrough~\n
+||Yashirin matn spoiler||\n
+`Ko'chirib olish mumkin bo'lgan matn code`\n
+[Biriktirilgan havola inline link](https://ilm-foyda.uz)\n
+```
+Ko'rsatmalar yoki codelar uchun maxsus formatlash turidagi matn .... Loren minsin yana bir nimalar
+```
+";
+
+echo bot('sendMessage', [
     'chat_id' => "1260351935",
-    'text' => $hi_text,
-    'parse_mode' => "HTML"
-]));
-
-
+    'text' => $mess_text,
+    'parse_mode' => "MarkdownV2",
+]);
