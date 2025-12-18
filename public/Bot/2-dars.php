@@ -54,7 +54,24 @@ function bot($method, $params = [])
 //    'parse_mode' => "HTML",
 //]));
 
+//echo bot('sendMessage',[
+//    'chat_id' => "1260351935",
+//    'text' => "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+//]);
+
+
 echo bot('sendMessage',[
     'chat_id' => "1260351935",
-    'text' => "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    'text' => "Bu inline reply markup",
+    'disable_web_page_preview' => true,
+    'reply_markup' => json_encode([
+        'inline_keyboard' => [
+            [['text'=>"textbtn1",'callback_data'=>"btn1"], ['text'=>"textbtn2",'callback_data'=>"btn2"],['text'=>"textbtn3",'callback_data'=>"btn3"]],
+            [['text'=>"Saytga havola", 'url'=> 'https://uzkti.uz']],
+            [['text'=>"Videoni kurish", 'url'=> 'https://www.youtube.com/watch?v=dQw4w9WgXcQ']],
+            [['text'=>"Mehriddin",'url'=>'tg://user?id=1260351935']],
+            [['text'=>"Kanalga havola", 'url'=>'https://t.me/Mehriddin_music']],
+            [['text'=>"Share tugmasi",'url'=>'https://t.me/share/url?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&text=Mana+shu+videoni+ko\'rda']],
+        ]
+    ])
 ]);
