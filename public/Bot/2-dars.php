@@ -38,20 +38,19 @@ function bot($method, $params = [])
 //3-dars matnlari -----------------------------------------------------------------------------------------------------
 
 $mess_text = "
-To'yintirilgan matn bold*\n
-_Yotiq yozuv italic_\n
-__Ostki chiziqli matn underline__\n
-~Inkor qilingan matn strikethrough~\n
-||Yashirin matn spoiler||\n
-`Ko'chirib olish mumkin bo'lgan matn code`\n
-[Biriktirilgan havola inline link](https://ilm-foyda.uz)\n
-```
-Ko'rsatmalar yoki codelar uchun maxsus formatlash turidagi matn .... Loren minsin yana bir nimalar
-```
+<b>To'yintirilgan matn bold</b>
+<i>Yotiq yozuv italic</i>
+<u>Ostki chiziqli matn underline</u>
+<s>Inkor qilingan matn strikethrough</s>
+<span class=\"tg-spoiler\">Yashirin matn spoiler</span>
+<code>Ko'chirib olish mumkin bo'lgan matn</code>
+<a href=\"https://ilm-foyda.uz\">Biriktirilgan havola</a>
+<pre>Ko'rsatmalar yoki codelar uchun maxsus formatlash</pre>
 ";
 
 dump(bot('sendMessage', [
     'chat_id' => "1260351935",
     'text' => $mess_text,
-    'parse_mode' => "MarkdownV2",
+    'parse_mode' => "HTML",
 ]));
+
