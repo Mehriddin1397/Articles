@@ -37,20 +37,24 @@ function bot($method, $params = [])
 
 //3-dars matnlari -----------------------------------------------------------------------------------------------------
 
-$mess_text = "
-<b>To'yintirilgan matn bold</b>
-<i>Yotiq yozuv italic</i>
-<u>Ostki chiziqli matn underline</u>
-<s>Inkor qilingan matn strikethrough</s>
-<span class=\"tg-spoiler\">Yashirin matn spoiler</span>
-<code>Ko'chirib olish mumkin bo'lgan matn</code>
-<a href=\"https://ilm-foyda.uz\">Biriktirilgan havola</a>
-<pre>Ko'rsatmalar yoki codelar uchun maxsus formatlash</pre>
-";
+//$mess_text = "
+//<b>To'yintirilgan matn bold</b>
+//<i>Yotiq yozuv italic</i>
+//<u>Ostki chiziqli matn underline</u>
+//<s>Inkor qilingan matn strikethrough</s>
+//<span class=\"tg-spoiler\">Yashirin matn spoiler</span>
+//<code>Ko'chirib olish mumkin bo'lgan matn</code>
+//<a href=\"https://ilm-foyda.uz\">Biriktirilgan havola</a>
+//<pre>Ko'rsatmalar yoki codelar uchun maxsus formatlash</pre>
+//";
+//
+//dump(bot('sendMessage', [
+//    'chat_id' => "1260351935",
+//    'text' => $mess_text,
+//    'parse_mode' => "HTML",
+//]));
 
-dump(bot('sendMessage', [
+echo bot('sendMessage',[
     'chat_id' => "1260351935",
-    'text' => $mess_text,
-    'parse_mode' => "HTML",
-]));
-
+    'text' => "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+]);
