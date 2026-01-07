@@ -58,8 +58,8 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav m-auto">
-                        <a href="{{route('web.scientists.index')}}" class="nav-item nav-link active">Home</a>
-                        <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
+                        <a href="{{route('web.scientists.index')}}" class="nav-item nav-link active">Бош саҳифа</a>
+                        <a href="{{route('contact')}}" class="nav-item nav-link">Боғланиш</a>
                     </div>
                 </div>
             </nav>
