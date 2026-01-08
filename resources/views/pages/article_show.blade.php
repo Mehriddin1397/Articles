@@ -32,14 +32,14 @@
                         <p style="color: red">Текширилмаган</p>
                     @else
 
-                        <p class="mr-3 text-muted"><i class="fa fa-list-alt"></i> {{ $article['scores']['definitions'] ?? 0 }} ta ilmiy ta'rif  </p>
-                        <p class="mr-3 text-muted"><i class="fa fa-puzzle-piece"></i>{{$article['scores']['classifications']}}  ta ilmiy ta </p>
-                        <p class="mr-3 text-muted"><i class="fa fa-lightbulb"></i> {{$article['scores']['suggestions']}} ta ilmiy takli </p>
+                        <p class="mr-3 text-muted"><i class="fa fa-list-alt"></i> {{ $article['scores']['definitions'] ?? 0 }} та илмий таъриф</p>
+                        <p class="mr-3 text-muted"><i class="fa fa-puzzle-piece"></i>{{$article['scores']['classifications']}}  та илмий тасниф </p>
+                        <p class="mr-3 text-muted"><i class="fa fa-lightbulb"></i> {{$article['scores']['suggestions']}} та илмий таклиф </p>
                     @endif
                 </div>
                 <iframe src="{{ asset($article['pdf']) }}" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
 
-                <a href="{{ asset($article['pdf']) }}" download class="btn btn-success mt-3" target="_blank">Yuklab olish</a>
+                <a href="{{ asset($article['pdf']) }}" download class="btn btn-success mt-3" target="_blank">Юклаб олиш</a>
             </div>
 
         </div>

@@ -9,7 +9,7 @@
             </div>
             <div class="col-sm-6 text-center text-md-right">
                 <div class="d-inline-flex pt-2">
-                    <h4 class="m-0 text-white"><a class="text-white" href="/">Home</a></h4>
+                    <h4 class="m-0 text-white"><a class="text-white" href="/">Бош саҳифа</a></h4>
                     <h4 class="m-0 text-white px-2">/</h4>
                     <h4 class="m-0 text-white">Боғланиш</h4>
                 </div>
@@ -43,19 +43,19 @@
                 <div id="success"></div>
                 <form name="sentMessage" id="contactForm" novalidate="novalidate">
                     <div class="control-group">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                        <input type="text" class="form-control" id="name" placeholder="Исмингиз" required="required" data-validation-required-message="Please enter your name" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                        <input type="email" class="form-control" id="email" placeholder="Электрон манзилингиз" required="required" data-validation-required-message="Please enter your email" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                        <input type="text" class="form-control" id="subject" placeholder="Мавзи" required="required" data-validation-required-message="Please enter a subject" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <textarea class="form-control" rows="8" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                        <textarea class="form-control" rows="8" id="message" placeholder="Хабар" required="required" data-validation-required-message="Please enter your message"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                     <div>

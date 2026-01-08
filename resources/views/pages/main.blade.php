@@ -36,13 +36,13 @@
             <div class="col-md-7">
                 <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">{{ $s['full_name'] }}</h3>
                 <div class="d-flex mb-3">
-                    <small class="mr-2 text-muted"><i class="fa fa-star"></i> {{ $s['total_score'] }} ball</small>
-                    <small class="mr-2 text-muted"><i class="fa fa-newspaper"></i> {{ $s['articles_count'] }} ta maqola</small>
+                    <small class="mr-2 text-muted"><i class="fa fa-star"></i> {{ $s['total_score'] }} балл</small>
+                    <small class="mr-2 text-muted"><i class="fa fa-newspaper"></i> {{ $s['articles_count'] }} та мақола</small>
                 </div>
                 <p>
                     {{ $s['degree'] }}
                 </p>
-                <a class="btn btn-link p-0" href="{{ route('web.scientists.show', $s['id']) }}">Ko'rish <i class="fa fa-angle-right"></i></a>
+                <a class="btn btn-link p-0" href="{{ route('web.scientists.show', $s['id']) }}">Кўриш <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         @endforeach
