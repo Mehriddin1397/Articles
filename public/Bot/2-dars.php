@@ -107,8 +107,14 @@ function bot($method, $params = [])
 //]);
 
 //sendPhoto
-echo bot('sendPhoto',[
+//echo bot('sendPhoto',[
+//    'chat_id'=>'1260351995',
+//    'photo'=>"https://uzkti.uz/Bot/photo.jpg",
+//    'caption'=>"Bu internetdan url bn yuborilgan rasm"
+//]);
+
+echo bot('sentPhoto',[
     'chat_id'=>'1260351995',
-    'photo'=>"https://uzkti.uz/Bot/photo.jpg",
-    'caption'=>"Bu internetdan url bn yuborilgan rasm"
+    'photo'=>new CURLFile("photo.jpg"),
+    'caption'=>" lokal yuborilgan rasm"
 ]);
