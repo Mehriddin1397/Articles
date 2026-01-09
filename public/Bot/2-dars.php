@@ -17,7 +17,7 @@ function bot($method, $params = [])
         CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_POSTFIELDS => http_build_query($params),
+        CURLOPT_POSTFIELDS => $params,
     ]);
 
     $res = curl_exec($curl);
