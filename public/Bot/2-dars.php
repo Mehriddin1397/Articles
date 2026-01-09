@@ -95,6 +95,6 @@ echo bot('sendMessage',[
     'disable_web_page_preview' => true,
     'reply_markup' => json_encode([
         'force_reply'=>true,
-        'input_placeholder'=> "8600 **** **** ****",
+        'input_field_placeholder'=> "8600 **** **** ****",
     ])
 ]);
