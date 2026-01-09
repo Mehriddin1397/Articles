@@ -127,3 +127,9 @@ echo bot('sendPhoto',[
 //    'photo'=> new CURLFile("photo.jpg"),
 //    'caption'=>" lokal yuborilgan rasm"
 //]);
+
+echo bot('sendPhoto',[
+    'chat_id'=>'1260351935',
+    'photo'=>"AgACAgQAAxkDAANKaWCr_fZRj8STsHXvW-2SZAm_5TgAAuYLaxvvjQRTDkGMlnalHOYBAAMCAAN4AAM4BA",
+    'caption'=>"telegram serveridan file id bn yuborilgan rasm"
+]);
