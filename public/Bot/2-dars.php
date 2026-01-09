@@ -89,12 +89,19 @@ function bot($method, $params = [])
 //        ])
 //]);
 
-echo bot('sendMessage',[
-    'chat_id'=> "1260351935",
-    'text' => "Karta raqamingizni kiriting:",
-    'disable_web_page_preview' => true,
-    'reply_markup' => json_encode([
-        'force_reply'=>true,
-        'input_field_placeholder'=> "8600 **** **** ****",
-    ])
+//echo bot('sendMessage',[
+//    'chat_id'=> "1260351935",
+//    'text' => "Karta raqamingizni kiriting:",
+//    'disable_web_page_preview' => true,
+//    'reply_markup' => json_encode([
+//        'force_reply'=>true,
+//        'input_field_placeholder'=> "8600 **** **** ****",
+//    ])
+//]);
+
+// forwardMessage
+echo bot('forwardMessage',[
+    'chat_id'=>"1260351995",
+    'from_chat_id'=>1260351995,
+    'message_id'=>312,
 ]);
