@@ -109,14 +109,14 @@ file_put_contents("log.json",json_encode(json_decode(file_get_contents('php://in
 //]);
 
 //sendPhoto
-//echo bot('sendPhoto',[
-//    'chat_id'=>'1260351995',
-//    'photo'=>"https://uzkti.uz/Bot/photo.jpg",
-//    'caption'=>"Bu internetdan url bn yuborilgan rasm"
-//]);
-
-echo bot('sentPhoto',[
+echo bot('sendPhoto',[
     'chat_id'=>'1260351995',
-    'photo'=> new CURLFile("photo.jpg"),
-    'caption'=>" lokal yuborilgan rasm"
+    'photo'=>"https://uzkti.uz/Bot/photo.jpg",
+    'caption'=>"Bu internetdan url bn yuborilgan rasm"
 ]);
+
+//echo bot('sentPhoto',[
+//    'chat_id'=>'1260351995',
+//    'photo'=> new CURLFile("photo.jpg"),
+//    'caption'=>" lokal yuborilgan rasm"
+//]);
