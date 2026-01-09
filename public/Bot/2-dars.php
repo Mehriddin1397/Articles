@@ -26,7 +26,14 @@ function bot($method, $params = [])
 
 }
 
-file_put_contents("log.json",json_encode(json_decode(file_get_contents('php://input'),true), JSON_PRETTY_PRINT));
+file_put_contents(
+    "log.json",
+    json_encode(
+        json_decode(file_get_contents('php://input'), true),
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    )
+);
+
 //dump(bot("getMe",[]));
 
 //$hi_text = "Salom, bot ishlamoqda!";
@@ -110,7 +117,7 @@ file_put_contents("log.json",json_encode(json_decode(file_get_contents('php://in
 
 //sendPhoto
 echo bot('sendPhoto',[
-    'chat_id'=>'1260351995',
+    'chat_id'=>'1260351935',
     'photo'=>"https://uzkti.uz/Bot/photo.jpg",
     'caption'=>"Bu internetdan url bn yuborilgan rasm"
 ]);
