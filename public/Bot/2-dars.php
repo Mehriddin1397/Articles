@@ -27,13 +27,13 @@ function bot($method, $params = [])
 }
 //dump(bot("getMe",[]));
 
-$hi_text = "Salom, bot ishlamoqda!";
-
-dump(bot('sendMessage', [
-    'chat_id' => "1260351935",
-    'text' => $hi_text,
-    'parse_mode' => "HTML"
-]));
+//$hi_text = "Salom, bot ishlamoqda!";
+//
+//dump(bot('sendMessage', [
+//    'chat_id' => "1260351935",
+//    'text' => $hi_text,
+//    'parse_mode' => "HTML"
+//]));
 
 //3-dars matnlari -----------------------------------------------------------------------------------------------------
 
@@ -100,9 +100,15 @@ dump(bot('sendMessage', [
 //]);
 
 // forwardMessage
-echo bot('forwardMessage',[
-    'chat_id'=>"1260351995",
-    'from_chat_id'=>1260351995,
-    'message_id'=>65,
-]);
+//echo bot('forwardMessage',[
+//    'chat_id'=>"1260351995",
+//    'from_chat_id'=>1260351995,
+//    'message_id'=>65,
+//]);
 
+//sendPhoto
+echo bot('sendPhoto',[
+    'chat_id'=>'1260351995',
+    'photo'=>"https://uzkti.uz/Bot/photo.jpg",
+    'caption'=>"Bu internetdan url bn yuborilgan rasm"
+]);
