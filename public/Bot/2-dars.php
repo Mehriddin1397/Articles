@@ -151,12 +151,12 @@ echo bot('sendAudio',[
 //    'thumb'=>new CURLFile("photo.jpg")
 //]);
 
-//echo bot('sendAudio',[
-//    'chat_id'=>'1260351935',
-//    'audio'=>"AgACAgQAAxkDAANKaWCr_fZRj8STsHXvW-2SZAm_5TgAAuYLaxvvjQRTDkGMlnalHOYBAAMCAAN5AAM4BA",
-//    'caption'=>"Bu telegram serveridan yuborilgan audio",
-//    'performer'=>"Shokir - Tungi toshkent",
-//    'title'=>"basss",
-//    'thumb'=>"AgACAgQAAxkDAANKaWCr_fZRj8STsHXvW-2SZAm_5TgAAuYLaxvvjQRTDkGMlnalHOYBAAMCAANzAAM4BA"
-//]);
+echo bot('sendAudio',[
+    'chat_id'=>'1260351935',
+    'audio'=>"CQACAgQAAxkDAANVaWDfl5_mKaDY9aVulfH3SLjfrDgAAvkJAAKU6QxTcpr63l1ioko4BA",
+    'caption'=>"Bu telegram serveridan yuborilgan audio",
+    'performer'=>"Shokir - Tungi toshkent",
+    'title'=>"basss",
+    'thumb'=>"AgACAgQAAxkDAANKaWCr_fZRj8STsHXvW-2SZAm_5TgAAuYLaxvvjQRTDkGMlnalHOYBAAMCAANzAAM4BA"
+]);
 
