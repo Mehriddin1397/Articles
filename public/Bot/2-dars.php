@@ -22,9 +22,11 @@ function bot($method, $params = [])
 
     $res = curl_exec($curl);
     curl_close($curl);
-    if (!curl_error($curl)) return json_decode($res, true);
+    if (!curl_error($curl)) return json_encode(json_decode($res, true),JSON_PRETTY_PRINT);
 
 }
+
+file_put_contents("log.json",json_encode(json_decode(file_get_contents('php://input'),true), JSON_PRETTY_PRINT));
 //dump(bot("getMe",[]));
 
 //$hi_text = "Salom, bot ishlamoqda!";
@@ -115,6 +117,6 @@ function bot($method, $params = [])
 
 echo bot('sentPhoto',[
     'chat_id'=>'1260351995',
-    'photo'=>new CURLFile("photo.jpg"),
+    'photo'=> new CURLFile("photo.jpg"),
     'caption'=>" lokal yuborilgan rasm"
 ]);
