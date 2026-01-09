@@ -164,7 +164,7 @@ file_put_contents(
 
 echo bot('sendVideo',[
     'chat_id'=>'1260351935',
-    'video' => "https://uzkti.uz/Bot/video.mp4",
+    'video' => "BAACAgQAAxkDAANlaWDxfuPAj9LQeBXIWHIjjloMBNsAAlsJAALGZAxTBCNbKhgpXNU4BA",
     'caption'=>"Bu local yuborilgan video",
     'thumb' => new CURLFile("photo.jpg"),
     'supports_caption' => true,
