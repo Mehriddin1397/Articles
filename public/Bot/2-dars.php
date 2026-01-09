@@ -137,11 +137,11 @@ file_put_contents(
 
 // sendAudio
 
-echo bot('sendAudio',[
-    'chat_id'=>'1260351935',
-    'audio'=>"https://uzkti.uz/Bot/audio.mp3",
-    'caption'=>"Bu internetdan url bn yuborilgan audio"
-]);
+//echo bot('sendAudio',[
+//    'chat_id'=>'1260351935',
+//    'audio'=>"https://uzkti.uz/Bot/audio.mp3",
+//    'caption'=>"Bu internetdan url bn yuborilgan audio"
+//]);
 //echo bot('sendAudio',[
 //    'chat_id'=>'1260351935',
 //    'audio'=>new CURLFile("audio.mp3"),
@@ -157,6 +157,16 @@ echo bot('sendAudio',[
     'caption'=>"Bu telegram serveridan yuborilgan audio",
     'performer'=>"Shokir - Tungi toshkent",
     'title'=>"basss",
-    'thumb'=>"AgACAgQAAxkDAANKaWCr_fZRj8STsHXvW-2SZAm_5TgAAuYLaxvvjQRTDkGMlnalHOYBAAMCAANzAAM4BA"
+    'thumb'=>"AgACAgQAAxkDAANKaWCr_fZRj8STsHXvW-2SZAm_5TgAAuYLaxvvjQRTDkGMlnalHOYBAAMCAAN4AAM4BA",
+]);
+
+// sendVideo
+
+echo bot('sendVideo',[
+    'chat_id'=>'1260351935',
+    'video' => "https://uzkti.uz/Bot/video.mp4",
+    'caption'=>"Bu local yuborilgan video",
+    'thumb' => new CURLFile("photo.jpg"),
+    'supports_caption' => true,
 ]);
 
