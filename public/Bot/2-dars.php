@@ -77,14 +77,24 @@ function bot($method, $params = [])
 //]);
 
 
+//echo bot('sendMessage',[
+//    'chat_id' => "1260351935",
+//    'text' => "Bu menyu markup",
+//    'disable_web_page_preview' => true,
+//    'reply_markup' => json_encode([
+//        'keyboard' => [
+//            [['text' => "text btn1"], ['text' => "text btn2"], ['text' => "text btn3"]],
+//
+//            ]
+//        ])
+//]);
+
 echo bot('sendMessage',[
-    'chat_id' => "1260351935",
-    'text' => "Bu menyu markup",
+    'chat_id'=> "1260351935",
+    'text' => "Karta raqamingizni kiriting:",
     'disable_web_page_preview' => true,
     'reply_markup' => json_encode([
-        'keyboard' => [
-            [['text' => "text btn1"], ['text' => "text btn2"], ['text' => "text btn3"]],
-
-            ]
-        ])
+        'force_reply'=>true,
+        'input_placeholder'=> "8600 **** **** ****",
+    ])
 ]);
