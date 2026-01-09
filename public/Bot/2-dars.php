@@ -27,13 +27,13 @@ function bot($method, $params = [])
 }
 //dump(bot("getMe",[]));
 
-//$hi_text = "Salom, bot ishlamoqda!";
-//
-//dump(bot('sendMessage', [
-//    'chat_id' => "1260351935",
-//    'text' => $hi_text,
-//    'parse_mode' => "HTML"
-//]));
+$hi_text = "Salom, bot ishlamoqda!";
+
+dump(bot('sendMessage', [
+    'chat_id' => "1260351935",
+    'text' => $hi_text,
+    'parse_mode' => "HTML"
+]));
 
 //3-dars matnlari -----------------------------------------------------------------------------------------------------
 
@@ -100,8 +100,9 @@ function bot($method, $params = [])
 //]);
 
 // forwardMessage
-echo bot('forwardMessage',[
-    'chat_id'=>"1260351995",
-    'from_chat_id'=>1260351995,
-    'message_id'=>312,
-]);
+//echo bot('forwardMessage',[
+//    'chat_id'=>"1260351995",
+//    'from_chat_id'=>1260351995,
+//    'message_id'=>312,
+//]);
+
