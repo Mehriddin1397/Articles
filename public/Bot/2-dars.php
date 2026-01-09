@@ -100,9 +100,9 @@ dump(bot('sendMessage', [
 //]);
 
 // forwardMessage
-//echo bot('forwardMessage',[
-//    'chat_id'=>"1260351995",
-//    'from_chat_id'=>1260351995,
-//    'message_id'=>312,
-//]);
+echo bot('forwardMessage',[
+    'chat_id'=>"1260351995",
+    'from_chat_id'=>1260351995,
+    'message_id'=>65,
+]);
 
